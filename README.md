@@ -32,7 +32,7 @@ A set of SwiftUI custom modifiers to make the ScrollView snappable.
 ```swift
 .package(
   url: "https://github.com/hugehoge/Snappable.git",
-  branch: "main"
+  .upToNextMinor(from: "0.1.0")
 )
 ```
 
