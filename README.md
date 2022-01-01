@@ -3,6 +3,7 @@ Snappable
 
 [![](https://img.shields.io/github/v/release/hugehoge/Snappable)](https://github.com/hugehoge/Snappable/releases/latest)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhugehoge%2FSnappable%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/hugehoge/Snappable)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhugehoge%2FSnappable%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/hugehoge/Snappable)
 
 A set of SwiftUI custom modifiers to make the ScrollView snappable.
 
@@ -20,9 +21,8 @@ A set of SwiftUI custom modifiers to make the ScrollView snappable.
 
 ## Requirements
 
-### OS
-
 - iOS 14.0+
+- Swift 5.5+
 
 ### Note
 
