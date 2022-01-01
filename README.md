@@ -23,7 +23,7 @@ A set of SwiftUI custom modifiers to make the ScrollView snappable.
 
 ### Note
 
-**Snappable depends on [Introspect for SwiftUI](https://github.com/siteline/SwiftUI-Introspect) due to detect the behavior of scrolling from UIScrollView, so this is fragile on iOS oe SwiftUI upates.**
+**Snappable depends on [Introspect for SwiftUI](https://github.com/siteline/SwiftUI-Introspect) due to detect the behavior of scrolling from UIScrollView, so this is fragile on iOS or SwiftUI upates.**
 
 ## Installation
 
@@ -58,9 +58,9 @@ struct ContentView: View {
 }
 ```
 
-1. Added `snapID(_:)` modifier to items in ScrollView
+1. Added `.snapID(_:)` modifier to items in ScrollView
     - **`snapID` applies [.id(_:)](https://developer.apple.com/documentation/swiftui/view/id(_:)) modifier internally**
-1. Added `snappable(_:mode:)` modifier to ScrollView
+1. Added `.snappable(_:mode:)` modifier to ScrollView
 
 ### Options
 #### Alignment
