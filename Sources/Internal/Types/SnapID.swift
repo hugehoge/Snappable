@@ -1,0 +1,1 @@
+internal typealias SnapID = AnyHashable
