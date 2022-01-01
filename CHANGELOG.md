@@ -9,6 +9,10 @@ Changelog
 
 ### Fixed
 
+### Document
+
+- Fix typo in README.md #2
+
 ### Misc
 
 ## [0.1.0]
