@@ -7,6 +7,8 @@ Snappable
 
 A set of SwiftUI custom modifiers to make the ScrollView snappable.
 
+The goal of this library is to provide an easy way to implement Views such as carousels and slideshows.
+
 ## Demo
 
 <details>
