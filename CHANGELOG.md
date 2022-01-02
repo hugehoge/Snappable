@@ -14,6 +14,7 @@ Changelog
 ### Document
 
 - Fix typo in README.md #2
+- Make README more visual #5
 
 ### Misc
 
