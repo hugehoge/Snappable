@@ -1,25 +1,25 @@
 Snappable
 ===
 
+[![](https://img.shields.io/github/v/release/hugehoge/Snappable)](https://github.com/hugehoge/Snappable/releases/latest)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhugehoge%2FSnappable%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/hugehoge/Snappable)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fhugehoge%2FSnappable%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/hugehoge/Snappable)
+
 A set of SwiftUI custom modifiers to make the ScrollView snappable.
+
+The goal of this library is to provide an easy way to implement Views such as carousels and slideshows.
 
 ## Demo
 
-<details>
-<summary><b>Carousel</b></summary>
-<img src="./assets/images/demo_carousel.gif">
-</details>
-
-<details>
-<summary><b>Vertical (.bottom alligned)</b></summary>
-<img src="./assets/images/demo_vertical.gif">
-</details>
+<p align="center">
+<img src="./images/carousel.gif" alt="Carousel demo">
+<img src="./images/vertical.gif" alt="Vertical demo">
+</p>
 
 ## Requirements
 
-### OS
-
 - iOS 14.0+
+- Swift 5.5+
 
 ### Note
 
