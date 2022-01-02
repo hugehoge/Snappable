@@ -11,15 +11,10 @@ The goal of this library is to provide an easy way to implement Views such as ca
 
 ## Demo
 
-<details>
-<summary><b>Carousel</b></summary>
-<img src="./assets/images/demo_carousel.gif">
-</details>
-
-<details>
-<summary><b>Vertical (.bottom alligned)</b></summary>
-<img src="./assets/images/demo_vertical.gif">
-</details>
+<p align="center">
+<img src="./assets/images/carousel.gif" alt="Carousel demo">
+<img src="./assets/images/vertical.gif" alt="Vertical demo">
+</p>
 
 ## Requirements
 
