@@ -39,6 +39,13 @@ internal class DraggingDetector: NSObject, UIScrollViewDelegate {
     }
   }
 
+  internal func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    guard case .immediately = snapMode.snapTiming else { return }
+
+    let currentSnapID = captureSnapID?()
+    scrollTo?(currentSnapID)
+  }
+
   internal func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
     guard case .afterScrolling = snapMode.snapTiming else { return }
 

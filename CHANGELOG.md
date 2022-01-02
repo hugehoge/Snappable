@@ -9,6 +9,8 @@ Changelog
 
 ### Fixed
 
+- Fixed issue with snap stopping #3, #4
+
 ### Document
 
 - Fix typo in README.md #2
