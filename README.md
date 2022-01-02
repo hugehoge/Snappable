@@ -12,8 +12,8 @@ The goal of this library is to provide an easy way to implement Views such as ca
 ## Demo
 
 <p align="center">
-<img src="./assets/images/carousel.gif" alt="Carousel demo">
-<img src="./assets/images/vertical.gif" alt="Vertical demo">
+<img src="./images/carousel.gif" alt="Carousel demo">
+<img src="./images/vertical.gif" alt="Vertical demo">
 </p>
 
 ## Requirements
