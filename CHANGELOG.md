@@ -9,14 +9,21 @@ Changelog
 
 ### Fixed
 
-- Fixed issue with snap stopping #3, #4
+### Document
+
+### Misc
+
+## [0.1.1]
+
+### Fixed
+
+- Fixed issue with snap stopping [#3](https://github.com/hugehoge/Snappable/pull/3), [#4](https://github.com/hugehoge/Snappable/pull/4)
 
 ### Document
 
-- Fix typo in README.md #2
-- Make README more visual #5
-
-### Misc
+- Fix typo in README.md [#2](https://github.com/hugehoge/Snappable/pull/2)
+- Make README more visual [#5](https://github.com/hugehoge/Snappable/pull/5)
+- Added document comment [#6](https://github.com/hugehoge/Snappable/pull/6)
 
 ## [0.1.0]
 
@@ -24,3 +31,4 @@ Changelog
 - Initial release
 
 [0.1.0]: https://github.com/hugehoge/Snappable/releases/tag/0.1.0
+[0.1.1]: https://github.com/hugehoge/Snappable/releases/tag/0.1.1
