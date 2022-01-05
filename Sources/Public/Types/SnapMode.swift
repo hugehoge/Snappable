@@ -7,9 +7,9 @@ import UIKit
 /// - `.afterScrolling`
 public struct SnapMode {
   /// The default setting for snapping after scrolling.
-  public static let afterScrolling: SnapMode = afterScrolling(decelerationRate: .fast)
+  public static let afterScrolling: SnapMode = Self.afterScrolling(decelerationRate: .fast)
   /// The default setting for snapping immediately.
-  public static let immediately: SnapMode = immediately(decelerationRate: .normal, withFlick: true)
+  public static let immediately: SnapMode = Self.immediately(decelerationRate: .normal, withFlick: true)
 
   internal let decelerationRate: DecelerationRate
   internal let snapTiming: SnapTiming
