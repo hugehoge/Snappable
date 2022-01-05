@@ -19,7 +19,7 @@ The goal of this library is to provide an easy way to implement Views such as ca
 ## Requirements
 
 - iOS 14.0+
-- Swift 5.5+
+- Swift 5.3+
 
 ### Note
 
