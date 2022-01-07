@@ -16,7 +16,10 @@ struct ContentView: View {
         }
       }
     }
-    .snappable(.bottom, mode: .afterScrolling(decelerationRate: .normal))
+    .snappable(
+      alignment: .bottom,
+      mode: .afterScrolling(decelerationRate: .normal)
+    )
   }
 
   private func color(_ index: Int) -> Color {

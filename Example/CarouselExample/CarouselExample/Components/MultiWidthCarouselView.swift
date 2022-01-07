@@ -22,7 +22,7 @@ struct MultiWidthCarouselView: View {
         }
       }
     }
-    .snappable(snapAlignment, mode: snapMode)
+    .snappable(alignment: snapAlignment, mode: snapMode)
   }
 
   private func color(_ index: Int) -> Color {
