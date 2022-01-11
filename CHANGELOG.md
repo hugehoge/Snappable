@@ -5,6 +5,8 @@ Changelog
 
 ### Feature
 
+- CocoaPods support [#11](https://github.com/hugehoge/Snappable/pull/11)
+
 ### Changed
 
 - Swift 5.3 support [#8](https://github.com/hugehoge/Snappable/pull/8), [#9](https://github.com/hugehoge/Snappable/pull/9)
