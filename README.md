@@ -68,10 +68,10 @@ struct ContentView: View {
 The snap anchor point can be set as an option.
 
 ```swift
-.snappable(.leading)
+.snappable(alignment: .leading)
 ```
 
-Available parameters are below:
+Available alignment parameters are below:
 
 - `.top`
 - `.leading`
@@ -89,9 +89,9 @@ You can determine the snap timing after the end of the drag with following param
 Both parameters are set together with scrolling deceleration rate.
 
 ```swift
-.snappable(.center, mode: .afterScolling(decelerationRate: .fast))
+.snappable(alignment: .center, mode: .afterScolling(decelerationRate: .fast))
 ```
 
 ```swift
-.snappable(.center, mode: .immediately(decelerationRate: .normal, withFlick: false))
+.snappable(alignment: .center, mode: .immediately(decelerationRate: .normal, withFlick: false))
 ```
