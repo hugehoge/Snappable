@@ -33,7 +33,7 @@ The goal of this library is to provide an easy way to implement Views such as ca
 ```swift
 .package(
   url: "https://github.com/hugehoge/Snappable.git",
-  .upToNextMinor(from: "0.1.0")
+  .upToNextMinor(from: "0.2.0")
 )
 ```
 
