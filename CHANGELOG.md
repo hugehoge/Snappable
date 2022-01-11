@@ -8,7 +8,7 @@ Changelog
 ### Changed
 
 - Swift 5.3 support [#8](https://github.com/hugehoge/Snappable/pull/8), [#9](https://github.com/hugehoge/Snappable/pull/9)
-- Changed the interface of snappable modifier [#10](https://github.com/hugehoge/Snappable/pull/10)
+- Changed the interface of snappable modifier [#10](https://github.com/hugehoge/Snappable/pull/10), [#12](https://github.com/hugehoge/Snappable/pull/12)
 
 ### Fixed
 
