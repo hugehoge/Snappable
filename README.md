@@ -37,6 +37,12 @@ The goal of this library is to provide an easy way to implement Views such as ca
 )
 ```
 
+### CocoaPods
+
+```ruby
+pod 'Snappable', '~> 0.2.0'
+```
+
 ## Usage
 
 ### Basic

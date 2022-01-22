@@ -11,6 +11,8 @@ Changelog
 
 ### Document
 
+- Added instructions on how to install via CocoaPods [#14](https://github.com/hugehoge/Snappable/pull/14)
+
 ### Misc
 
 ## [0.2.0]
