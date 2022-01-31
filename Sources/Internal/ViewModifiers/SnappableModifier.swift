@@ -30,10 +30,10 @@ internal struct SnappableModifier: ViewModifier {
           scrollView.delegate = draggingDetector
         }
         .background(
-          GeometryReader { geometoryProxy -> Color in
+          GeometryReader { geometryProxy -> Color in
             DispatchQueue.main.async {
               // This may be called multiple times in ScrollView frame updates
-              parentAnchor = snapAlignment.point(in: geometoryProxy.size)
+              parentAnchor = snapAlignment.point(in: geometryProxy.size)
             }
             return Color.clear
           }

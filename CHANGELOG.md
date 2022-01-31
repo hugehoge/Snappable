@@ -15,6 +15,8 @@ Changelog
 
 ### Misc
 
+- Fixed typo [#16](https://github.com/hugehoge/Snappable/pull/16)
+
 ## [0.2.0]
 
 ### Feature
