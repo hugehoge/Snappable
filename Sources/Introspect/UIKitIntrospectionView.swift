@@ -3,6 +3,7 @@ import SwiftUI
 
 /// Introspection UIView that is inserted alongside the target view.
 class IntrospectionUIView: UIView {
+  var didMoveToWindowHandler: (() -> Void)?
 
   required init() {
     super.init(frame: .zero)
@@ -13,6 +14,10 @@ class IntrospectionUIView: UIView {
   @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+
+  override func didMoveToWindow() {
+    didMoveToWindowHandler?()
   }
 }
 
@@ -43,18 +48,21 @@ struct UIKitIntrospectionView<TargetViewType: UIView>: UIViewRepresentable {
 
   /// When `updateUiView` is called after creating the Introspection view, it is not yet in the UIKit hierarchy.
   /// At this point, `introspectionView.superview.superview` is nil and we can't access the target UIKit view.
-  /// To workaround this, we wait until the runloop is done inserting the introspection view in the hierarchy, then run the selector.
+  /// To workaround this, we wait until the introspection view did attach to the window and the runloop is done
+  /// inserting the introspection view in the hierarchy, then run the selector.
   /// Finding the target view fails silently if the selector yield no result. This happens when `updateUIView`
   /// gets called when the introspection view gets removed from the hierarchy.
   func updateUIView(
     _ uiView: IntrospectionUIView,
     context: UIViewRepresentableContext<UIKitIntrospectionView>
   ) {
-    DispatchQueue.main.async {
-      guard let targetView = self.selector(uiView) else {
-        return
+    uiView.didMoveToWindowHandler = {
+      DispatchQueue.main.async {
+        guard let targetView = self.selector(uiView) else {
+          return
+        }
+        self.customize(targetView)
       }
-      self.customize(targetView)
     }
   }
 }
