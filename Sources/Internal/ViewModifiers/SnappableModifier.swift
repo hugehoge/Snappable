@@ -1,7 +1,5 @@
 import SwiftUI
 
-import Introspect
-
 internal struct SnappableModifier: ViewModifier {
   private let snapAlignment: SnapAlignment
   private let snapMode: SnapMode
