@@ -24,7 +24,8 @@ The goal of this library is to provide an easy way to implement Views such as ca
 
 ### Note
 
-**Snappable depends on [Introspect for SwiftUI](https://github.com/siteline/SwiftUI-Introspect) due to detect the behavior of scrolling from UIScrollView, so this is fragile on iOS or SwiftUI upates.**
+**Snappable includes the copied code from [Introspect for SwiftUI](https://github.com/siteline/SwiftUI-Introspect) ([#17](https://github.com/hugehoge/Snappable/pull/17)) due to detect the behavior of scrolling from UIScrollView.**
+**So this library would be fragile on iOS or SwiftUI updates.**
 
 ## Installation
 
