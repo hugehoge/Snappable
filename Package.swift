@@ -13,17 +13,11 @@ let package = Package(
       targets: ["Snappable"]
     ),
   ],
-  dependencies: [
-    .package(
-      name: "Introspect",
-      url: "https://github.com/siteline/SwiftUI-Introspect.git",
-      from: "0.1.3"
-    ),
-  ],
+  dependencies: [],
   targets: [
     .target(
       name: "Snappable",
-      dependencies: ["Introspect"],
+      dependencies: [],
       path: "Sources"
     ),
     .testTarget(

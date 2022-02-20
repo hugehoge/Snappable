@@ -10,6 +10,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '14.0'
   s.swift_versions   = ['5.3', '5.4', '5.5']
   s.source_files     = 'Sources/**/*.swift'
-
-  s.dependency 'Introspect', '~> 0.1.3'
 end
