@@ -5,6 +5,10 @@ Changelog
 
 ### Feature
 
+### Changed & Fixed
+
+- Fix the timing of introspecting UIScrollView [#17](https://github.com/hugehoge/Snappable/pull/17)
+
 ### Changed
 
 ### Fixed
