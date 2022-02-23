@@ -34,14 +34,14 @@ The goal of this library is to provide an easy way to implement Views such as ca
 ```swift
 .package(
   url: "https://github.com/hugehoge/Snappable.git",
-  .upToNextMinor(from: "0.2.0")
+  .upToNextMinor(from: "0.3.0")
 )
 ```
 
 ### CocoaPods
 
 ```ruby
-pod 'Snappable', '~> 0.2.0'
+pod 'Snappable', '~> 0.3.0'
 ```
 
 ## Usage

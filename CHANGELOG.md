@@ -5,13 +5,23 @@ Changelog
 
 ### Feature
 
-### Changed & Fixed
-
-- Fix the timing of introspecting UIScrollView [#17](https://github.com/hugehoge/Snappable/pull/17)
-
 ### Changed
 
 ### Fixed
+
+### Document
+
+### Misc
+
+## [0.3.0]
+
+### Changed
+
+- Fix the timing of introspecting UIScrollView [#17](https://github.com/hugehoge/Snappable/pull/17)
+
+### Fixed
+
+- Do not work inside LazyVStack [#15](https://github.com/hugehoge/Snappable/issues/15)
 
 ### Document
 
@@ -52,3 +62,4 @@ Changelog
 [0.1.0]: https://github.com/hugehoge/Snappable/releases/tag/0.1.0
 [0.1.1]: https://github.com/hugehoge/Snappable/releases/tag/0.1.1
 [0.2.0]: https://github.com/hugehoge/Snappable/releases/tag/0.2.0
+[0.3.0]: https://github.com/hugehoge/Snappable/releases/tag/0.3.0

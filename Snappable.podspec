@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Snappable'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A set of SwiftUI custom modifiers to make the ScrollView snappable.'
   s.description      = 'A set of SwiftUI custom modifiers to make the ScrollView snappable. The goal of this library is to provide an easy way to implement Views such as carousels and slideshows.'
   s.homepage         = 'https://github.com/hugehoge/Snappable'
