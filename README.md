@@ -53,7 +53,7 @@ struct ContentView: View {
   @State private var items: [Item]
 
   var body: some View {
-    ScrollView(.horiaontal) {
+    ScrollView(.horizontal) {
       LazyHStack {
         ForEach(items, id: \.self) { item in
           ItemView(item)
