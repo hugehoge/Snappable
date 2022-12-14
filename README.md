@@ -49,6 +49,8 @@ pod 'Snappable', '~> 0.3.0'
 ### Basic
 
 ```swift
+import Snappable
+
 struct ContentView: View {
   @State private var items: [Item]
 
