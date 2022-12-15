@@ -49,11 +49,13 @@ pod 'Snappable', '~> 0.3.0'
 ### Basic
 
 ```swift
+import Snappable
+
 struct ContentView: View {
   @State private var items: [Item]
 
   var body: some View {
-    ScrollView(.horiaontal) {
+    ScrollView(.horizontal) {
       LazyHStack {
         ForEach(items, id: \.self) { item in
           ItemView(item)
