@@ -8,8 +8,9 @@ public extension ScrollView {
   /// - Returns: A ScrollView, with the snapping behavior set.
   func snappable(
     alignment: SnapAlignment = .center,
-    mode: SnapMode = .immediately
+    mode: SnapMode = .immediately,
+    onSnap: ((AnyHashable?) -> Void)? = nil
   ) -> some View {
-    self.modifier(SnappableModifier(alignment: alignment, mode: mode))
+    self.modifier(SnappableModifier(alignment: alignment, mode: mode, onSnap: onSnap))
   }
 }
