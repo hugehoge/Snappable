@@ -3,16 +3,19 @@ import SwiftUI
 internal struct SnappableModifier: ViewModifier {
   private let snapAlignment: SnapAlignment
   private let snapMode: SnapMode
+  private let onSnap: ((AnyHashable?) -> Void)?
   private let draggingDetector: DraggingDetector
   private let coordinateSpaceName: UUID
 
   @State private var parentAnchor: CGPoint = .zero
   @State private var childSnapAnchors: [SnapID: CGPoint] = [:]
   @State private var snapCandidateID: SnapID?
+  @State private var lastOnSnapID: SnapID?
 
-  internal init(alignment: SnapAlignment, mode: SnapMode) {
+  internal init(alignment: SnapAlignment, mode: SnapMode, onSnap: ((AnyHashable?) -> Void)?) {
     self.snapAlignment = alignment
     self.snapMode = mode
+    self.onSnap = onSnap
     self.draggingDetector = DraggingDetector(snapMode: mode)
     self.coordinateSpaceName = UUID()
   }
@@ -73,6 +76,11 @@ internal struct SnappableModifier: ViewModifier {
             DispatchQueue.main.async {  // Avoid a crash when scrolling is stopped by touch
               withAnimation {
                 scrollViewProxy.scrollTo(id, anchor: snapAlignment.unitPoint)
+                
+                if id != lastOnSnapID {
+                  lastOnSnapID = id
+                  onSnap?(id)
+                }
               }
             }
           }
