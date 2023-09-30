@@ -9,12 +9,18 @@ internal struct SnappableModifier: ViewModifier {
   @State private var parentAnchor: CGPoint = .zero
   @State private var childSnapAnchors: [SnapID: CGPoint] = [:]
   @State private var snapCandidateID: SnapID?
+  @Binding private var selection : SnapID?
 
-  internal init(alignment: SnapAlignment, mode: SnapMode) {
+    internal init(
+        alignment: SnapAlignment,
+        mode: SnapMode,
+        selection : Binding<SnapID?>? = .constant(nil)
+    ) {
     self.snapAlignment = alignment
     self.snapMode = mode
     self.draggingDetector = DraggingDetector(snapMode: mode)
     self.coordinateSpaceName = UUID()
+	self._selection = selection ?? .constant(nil)
   }
 
   internal func body(content: Content) -> some View {
@@ -50,6 +56,12 @@ internal struct SnappableModifier: ViewModifier {
           }
         }
         .onAppear {
+		  if let id = selection {
+              DispatchQueue.main.async {
+                  scrollViewProxy.scrollTo(id, anchor: snapAlignment.unitPoint)
+              }
+		  }
+            
           draggingDetector.captureSnapID = { snapCandidateID }
           draggingDetector.flickTarget = { velocity in
             guard let current = snapCandidateID,
@@ -73,6 +85,7 @@ internal struct SnappableModifier: ViewModifier {
             DispatchQueue.main.async {  // Avoid a crash when scrolling is stopped by touch
               withAnimation {
                 scrollViewProxy.scrollTo(id, anchor: snapAlignment.unitPoint)
+                selection = id
               }
             }
           }
