@@ -1,1 +1,1 @@
-internal typealias SnapID = AnyHashable
+public typealias SnapID = AnyHashable
