@@ -13,6 +13,12 @@ Changelog
 
 ### Misc
 
+## [0.3.1]
+
+### Changed
+
+- Exposed selection (https://github.com/harisk92/Snappable/pull/1)
+
 ## [0.3.0]
 
 ### Changed
